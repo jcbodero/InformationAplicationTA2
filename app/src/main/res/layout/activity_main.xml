@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/indigo">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="165dp"
+        android:layout_height="107dp"
+        app:srcCompat="@drawable/icon"
+        android:translationX="120dp"
+        android:translationY="100dp"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
+        android:layout_marginVertical="@android:dimen/app_icon_size"
+        android:orientation="vertical"
+        android:translationY="130dp">
+
+        <Button
+            android:id="@+id/btnMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_normal"
+            android:theme="@style/PrimaryFlatButton"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:theme="@style/PrimaryFlatButton" />
+
+        <Button
+            android:id="@+id/btnCalen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calendario"
+            android:theme="@style/PrimaryFlatButton" />
+
+        <Button
+            android:id="@+id/btnGraph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grafico Lineal"
+            android:theme="@style/PrimaryFlatButton"/>
+    </LinearLayout>
+
+</LinearLayout>

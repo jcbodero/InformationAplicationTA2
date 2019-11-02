@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AplicationOfInformation</string>
+    <string name="button_normal">Mapa Google</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
