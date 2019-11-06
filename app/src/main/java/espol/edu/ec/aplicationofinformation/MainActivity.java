@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnMapa;
     Button btnVideo;
     Button btnCalen;
+    Button btnGrafica;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnMapa = (Button) findViewById(R.id.btnMapa);
         btnVideo = (Button) findViewById(R.id.btnVideo);
         btnCalen= (Button) findViewById(R.id.btnCalen);
+        btnGrafica=(Button)findViewById(R.id.btnGraph);
 
         btnMapa.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent= new Intent(getApplicationContext(),CalendarActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGrafica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(getApplicationContext(),GraficaActivity.class);
                 startActivity(intent);
             }
         });
